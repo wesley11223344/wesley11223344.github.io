@@ -1,0 +1,139 @@
+/* Configuração de Fundo e Centralização (Estilo Mobile/Apertado) */
+        body {
+            background-color: #000000; /* Fundo externo totalmente preto */
+            margin: 0;
+            padding: 40px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center; /* Centraliza o container */
+
+            /* background image:
+            linear-gradient((rgba 0, 0, 0, 0) rgba( 0, 0, 0, 0.75)
+            url("")
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; */
+        }
+
+        /* Container interno (Cinza escuro, espremido) */
+        .container {
+            background-color: #1a1a1a; /* Fundo interno cinza um pouco mais claro que o preto */
+            width: 100%;
+            max-width: 650px; /* Aperta o conteúdo para parecer mais centralizado/mobile */
+            padding: 40px;
+            box-sizing: border-box;
+            border-radius: 8px; /* Opcional: borda levemente arredondada para destacar do fundo preto */
+        }
+
+        /* Regras de Cores */
+        .data {
+            color: #FFFFFF; /* DADOS em branco */
+        }
+        .label, .punct {
+            color: #FF0000; /* RÓTULOS, LINKS e PONTUAÇÕES em vermelho */
+        }
+
+        /* Título Principal */
+        .main-title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+
+        /* Seção do Perfil (Foto + Info) */
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 50px;
+            flex-wrap: wrap; /* Permite quebrar linha em telas muito pequenas */
+        }
+
+        .photo-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color: #222222;
+            border: 1px solid #FF0000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .info-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-width: 250px;
+        }
+
+        .name-and-location {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .location {
+            font-size: 16px; /* Subtítulo, menor que o nome/cargo */
+        }
+
+        .links-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 15px;
+        }
+        
+        .links-row a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        
+        .links-row a:hover {
+            text-decoration: underline;
+        }
+
+        /* Títulos de Seção */
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Technical Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Espaços Reservados */
+        .reserved-space {
+            min-height: 100px;
+            margin-bottom: 50px;
+        }
+
+        /* Linhas divisórias */
+        hr {
+            border: 0;
+            border-top: 1px solid #FF0000;
+            margin: 40px 0;
+        }
